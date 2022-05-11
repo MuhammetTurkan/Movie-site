@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import { GlobalContext } from '../context/GlobalState'
 import ResultCard from './ResultCard'
 
 const Add = () => {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
+
   function onChange(e) {
     setQuery(e.target.value)
     fetch(
