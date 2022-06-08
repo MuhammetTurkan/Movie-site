@@ -20,7 +20,7 @@ const Add = () => {
         }
       });
   }
-  const count = results.length;
+  const count = results?.length;
   return (
     <div className="add-page">
       <div className="container">
