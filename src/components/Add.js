@@ -20,7 +20,7 @@ const Add = () => {
         }
       });
   }
-  const count = results?.length;
+
   return (
     <div className="add-page">
       <div className="container">
@@ -40,7 +40,7 @@ const Add = () => {
               onChange={onChange}
             />
           </div>
-          {count > 0 && (
+          {results.length > 0 && (
             <ul className="results">
               {results.map((movie) => (
                 <li key={movie.id}>
